@@ -183,6 +183,12 @@
 #define HEATER_1_PIN                        PB0   // HEATER2
 #define HEATER_BED_PIN                      PA0   // HOT BED
 
+#if HOTENDS == 1
+  #ifndef FAN1_PIN
+    #define FAN1_PIN                        PB0
+  #endif
+#endif
+
 #define FAN_PIN                             PB1   // FAN
 
 //
